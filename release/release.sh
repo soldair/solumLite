@@ -1,2 +1,2 @@
 #!/bin/sh
-ssh redirectboom@yougotboomed.com './yougotboomed.com/release/do_release.sh'
+ssh <your user>@<yourdomain> '<path to the application>/release/do_release.sh'

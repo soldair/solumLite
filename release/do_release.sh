@@ -1,3 +1,3 @@
 #!/bin/sh
-cd /home/redirectboom/yougotboomed.com
+cd <path to application>
 git pull origin master
