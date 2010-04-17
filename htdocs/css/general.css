@@ -1,0 +1,95 @@
+/*
+ * Copyright 2007-2010, Ryan Day
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ */
+/*************************************************
+clearfix
+**************************************************/
+.clearfix:after {
+content: " ";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+font-size: 0;
+}
+.clearfix {
+display: block;/*the holy hack for a bug in IE6 for Windows*/
+min-height:0px;
+width:100%;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */
+/*************************************************
+end clearfix
+**************************************************/
+
+.opacity-50{
+	filter:alpha(opacity=50);
+	-moz-opacity:0.50;
+	-khtml-opacity: 0.50;
+	opacity: 0.50;
+}
+
+.head-room{
+	margin-top:3px;
+}
+
+.border-radius-top-15{
+	border-radius-topright:15px;
+	-moz-border-radius-topright:15px;
+	-webkit-border-top-right-radius:15px;
+	-khtml-border-top-right-radius:15px;
+	
+	border-radius-topleft:15px;
+	-moz-border-radius-topleft:15px;
+	-webkit-border-top-left-radius:15px;
+	-khtml-border-top-left-radius:15px;
+}
+
+.border-radius-15{
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	-khtml-border-radius:15px;
+}
+
+.border-radius-top{
+	border-radius-topright:10px;
+	-moz-border-radius-topright:10px;
+	-webkit-border-top-right-radius:10px;
+	-khtml-border-top-right-radius:10px;
+	
+	border-radius-topleft:10px;
+	-moz-border-radius-topleft:10px;
+	-webkit-border-top-left-radius:10px;
+	-khtml-border-top-left-radius:10px;
+}
+
+.border-radius{
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-khtml-border-radius:10px;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.error-red-border{
+border: 1px solid #FF888A;
+}
+
+.error-red{
+	color:#FF888A;
+}
+
+.bold{
+	font-weight:bold;
+}

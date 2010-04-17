@@ -1,0 +1,1 @@
+<div>&copy; <?=$site_name?> <?=date("Y")?></div>

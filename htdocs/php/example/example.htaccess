@@ -1,0 +1,14 @@
+RewriteEngine on
+
+#RewriteRule ^(.*)/([0-9]+)-?(.*)(css|js)$ php/http/cssparser.php?path=$1/$3$4 [NC,L]
+RewriteRule ^(.*)/([0-9]+)-?(.*)(css|js)$ php/http/staticserver.php?path=$1/$3$4 [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#allow for dynamically named css and javascript files
+#used to force cache refresh
+# css/1010101010-main.css
+#	is rewritten to
+# css/main.css
+
+RewriteRule ^(.*)$ index.php [L] 

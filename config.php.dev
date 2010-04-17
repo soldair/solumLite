@@ -1,0 +1,56 @@
+<?php
+$config = array();
+###################
+# DATABASE CONFIG #
+###################
+$config['db'] = array(
+	'db_host'=>'127.0.0.1',
+	'db_name'=>'yougotboomed',
+	'db_user'=>'root',
+	'db_pass'=>'',
+	'db_read_hosts'=>''//comma delimited or array - used for replication setups
+	);
+
+############################
+# PAGE TITLE /TITLE PREFIX #
+############################
+
+$config['site_name'] = '';//default the host chunk of your SITE_ROOT_URL less the first cname chunk if it is there
+
+##############
+# SOLUM VIEW #
+##############
+//path rel from root
+$config['view_controller_path']  = '';//default: php/controller
+$config['view_html_path'] = '';//default: html
+
+################
+# DATA OBJECTS #
+################
+
+$config['data_object_dir'] = 'php/data';
+
+#####################
+# timezone settings #
+#####################
+
+$config['default_timezone'] = '';//default: America/Los_Angeles
+
+
+##################################
+#ENABLE TRACKING OF EVERY REQUEST#
+##################################
+
+$config['tracking_enabled'] = false;
+
+########################
+# ECHO DEBUG BENCHMARKS#
+########################
+
+$config['debug'] = false;
+
+################################
+# session data handler settings#
+################################
+
+$config['session_cookie_prefix'] = 'yb';
