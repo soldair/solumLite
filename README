@@ -1,0 +1,18 @@
+this is the solum framework. everything is set to start a basic web project.
+
+REQUIRMENTS:
+	may need named virtual host on your local for your project
+	need mod rewrite or equiv
+	expects that you would be using mysql and supports replication
+
+
+
+- setup your webserver/named virtual host
+- copy config.php.dev to config.php
+- check it in your browser
+
+the framework as a whole has only been tested on linux those solumDB and others are cross platform compatable.
+
+the default setup includes soome basic css resets and general stuff
+
+the default setup include jquery , swfobject and a general custom extension lib
